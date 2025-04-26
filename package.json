@@ -6,11 +6,10 @@
   "homepage": "https://ErikBezkrovnyi.github.io/todo-list/",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc && vite build",
     "build:github": "tsc && vite build --config vite.github.config.ts",
     "predeploy": "npm run build:github",
     "deploy": "gh-pages -d dist",
-    "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
